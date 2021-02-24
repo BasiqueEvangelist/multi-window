@@ -28,6 +28,8 @@ public class MinecraftClientMixin {
 
     @Inject(method = "openScreen", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/screen/Screen;init(Lnet/minecraft/client/MinecraftClient;II)V", shift = At.Shift.AFTER), cancellable = true)
     private void openScreenHook(@NotNull Screen screen, @NotNull CallbackInfo ci) {
+        System.out.println(((ScreenAccessor)screen).multi_window_getParentScreen());
+
         if (screen instanceof TitleScreen) {
             return;
         }

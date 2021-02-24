@@ -26,6 +26,8 @@ repositories {
     maven {
         url = "https://jitpack.io"
     }
+    maven {url = "https://raw.githubusercontent.com/GrossFabricHackers/maven/master"}
+    maven {url = "https://dl.bintray.com/user11681/maven"}
 }
 
 dependencies {
@@ -50,6 +52,7 @@ dependencies {
 
     modCompile "com.github.raphydaphy:breakoutapi:${project.breakoutapi_version}"
     include "com.github.raphydaphy:breakoutapi:${project.breakoutapi_version}"
+    modApi include("net.devtech:grossfabrichacks:1.0.2")
 }
 
 processResources {

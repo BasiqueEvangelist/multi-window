@@ -15,6 +15,9 @@
     "client": [
       "de.kb1000.multiwindow.client.MultiWindowClient"
     ],
+    "gfh:prePrePreLaunch": [
+      "de.kb1000.multiwindow.asm.MultiWindowASM"
+    ],
     "main": [
       "de.kb1000.multiwindow.MultiWindow"
     ]
